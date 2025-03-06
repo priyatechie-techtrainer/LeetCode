@@ -3,11 +3,10 @@ class Solution {
 
 
         int gridSize=grid.length;
-        int gridColSize=grid[0].length;
+      //  int gridColSize=grid[0].length;
         int tempResult[]=new int[(gridSize*gridSize)+1];
         int ansResult[]=new int[2];
-        if(gridSize==gridColSize)
-        {
+      
             for(int i=0;i<gridSize;i++)
             {
                 for(int j=0;j<grid[i].length;j++)
@@ -22,9 +21,6 @@ class Solution {
                     }
                 }
             }
-for(int n:tempResult)
-System.out.println(n);
-System.out.println(tempResult.length);
 
             for(int i=0;i<tempResult.length;i++)
             {
@@ -35,7 +31,7 @@ System.out.println(tempResult.length);
 
 
             }
-        }
+        
         return ansResult;
         
     }
